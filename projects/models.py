@@ -12,8 +12,36 @@ class Project(models.Model):
     github= models.CharField(max_length=400)
 
     url = models.CharField(max_length=300)
+    
+    
+    html = models.BooleanField(
+        "HTML",
+        default=0,
+        blank=False,
+    )
 
+    jd = models.BooleanField(
+        "Javascript",
+        default=0,
+        blank=False,
+    )
+    dj = models.BooleanField(
+        "DJango",
+        default=0,
+        blank=False,
+    )
+    react = models.BooleanField(
+        "React",
+        default=0,
+        blank=False,
+    )
 
+    css = models.BooleanField(
+        "CSS",
+        default=0,
+        blank=False,
+    )
+    
     
 
 
